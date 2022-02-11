@@ -1,5 +1,4 @@
 import java.util.*;
-import java.nio.file.*;
 
 public class Launcher {
     public static void main(String[] args) {
@@ -12,7 +11,7 @@ public class Launcher {
         commands.add(new Predict());
         boolean test = true;
         while (test) {
-            System.out.println("Enter command: ");
+            System.out.println("Enter a command: ");
             String output = sc.nextLine();
             Command cmd = commands.stream().filter(writtenCMD -> output.equals(writtenCMD.name())).findAny()
                     .orElse(null);
