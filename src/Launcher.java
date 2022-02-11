@@ -9,6 +9,7 @@ public class Launcher {
         commands.add(new Quit());
         commands.add(new Fibo());
         commands.add(new Freq());
+        commands.add(new Predict());
         boolean test = true;
         while (test) {
             System.out.println("Enter command: ");
